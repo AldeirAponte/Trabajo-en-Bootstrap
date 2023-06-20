@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./imagenes/logo/logo-pagina.png" class="rounded-circle-5" type="image/x-icon">
+  <!-- link de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- link de IconosBootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- link de mis estilos -->
+  <link rel="stylesheet" href="./estilos.css">
+  <title>ELECTRONIC-STORE: todo en un mismo lugar!</title>
+
+</head>
+
+<body>
+
+  <header class="bg-secondary sticky-top">
+    <div class="container-md container-fluid d-flex justify-content-between align-items-center">
+      <div class="row">
+        <a href="./index.html"><img class="logo" src="./imagenes/logo/logotipo.png" alt="imagen-logo"></a>
+      </div>
+      <div class="row">
+        <h1 class="col titulo">ELECTRONIC-STORE</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">INICIO</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#electronicos" id="navbar-electronicos" role="button" data-bs-toggle="dropdown" aria-expanded="false">ELECTRONICOS</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbar-electronicos">
+                  <li><a class="dropdown-item" href="#celulares">Celulares</a></li>
+                  <li><a class="dropdown-item" href="#tv-audio">TV y Audio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#electrodomesticos" id="navbar-electrodomesticos" role="button" data-bs-toggle="dropdown" aria-expanded="false">ELECTRODOMESTICOS</a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbar-electrodomesticos">
+                  <li><a class="dropdown-item" href="#cocina">Cocina</a></li>
+                  <li><a class="dropdown-item" href="#limpieza">limpieza</a></li>
+                  <li><a class="dropdown-item" href="#aire-calefaccion">Aire y Calefacción</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#novedades">NOVEDADES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-fluid container-md pt-5" id="inicio">
+    <div id="carousel-automatico" class="carousel slide carousel-fade carousel-dark w-75 m-auto"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators d-none d-md-flex">
+        <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner w-auto b-2">
+        <div class="carousel-item active">
+          <img src="./imagenes/carusel/descuentos-Final.jpg" class="d-block w-100 rounded" alt="imagen-1">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/carusel/imagen-descuentos.jpg" class="d-block w-100 rounded" alt="imagen-2">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/carusel/HUAWEI-Papa-1024x572.webp" class="d-block w-100 rounded" alt="imagen-3">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/carusel/imagen-rebajas.webp" class="d-block w-100 rounded" alt="imagen-4">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/carusel/imagen-papá.jpg" class="d-block w-100 rounded" alt="imagen-5">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-automatico" data-bs-slide="prev">
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-automatico" data-bs-slide="next">
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h2 class="text-center mt-5 promo">¡¡No te pierdas Nuestras Promociones!!</h2>
+
+    <hr class="m-5">
+
+    <section class="container-fluid text-center">
+      <h2 class="m-5 subtitulos" id="electronicos">ELECTRONICOS</h2>
+      <h3 class="subtitulos" id="celulares">Celulares</h3>
+      <div id="carousel-celulares" class="carousel slide carousel-dark w-auto">
+        <div class="carousel-inner w-auto b-2">
+          <div class="carousel-item active">
+            <div class="row row-cols-3 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/celulares/sm-g990_s21fe_front_za_1_8_3.png"
+                    class="card-img-top w-100 rounded" alt="imagen-celular">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Samsung s21Fe</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/celulares/samsung_a54_graphite_front.png"
+                    class="card-img-top w-100 rounded" alt="imagen-celular">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Samsung a54</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/celulares/g22-negro-frente_2.png" class="card-img-top w-100 rounded"
+                    alt="imagen-celular">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Motorola g22</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-3 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/celulares/samsung-a14-front.png" class="card-img-top w-100 rounded"
+                    alt="imagen-celular">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Samsung a14</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/celulares/s22-negro-frente.png" class="card-img-top w-100 rounded"
+                    alt="imagen-celular">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Samsung s22</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/celulares/g52-negro-frente.png" class="card-img-top w-100 rounded"
+                    alt="imagen-celular">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Motorola g52</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-celulares" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-celulares" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h3 id="tv-audio" class="pt-5 subtitulos">TV y Audio</h3>
+      <div id="carousel-tv" class="carousel slide carousel-dark w-auto">
+        <div class="carousel-inner w-auto b-2">
+          <div class="carousel-item active">
+            <div class="row row-cols-3 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/tv-sonido/smart-TV-LG.webp" class="card-img-top w-100 rounded"
+                    alt="imagen-televisor">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Smart TV LG 55"</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/tv-sonido/smart-TV-tcl.webp" class="card-img-top w-100 rounded"
+                    alt="imagen-televisor">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Smart TV 32" TCL</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/tv-sonido/smart-TV4k.webp" class="card-img-top w-100 rounded"
+                    alt="imagen-televisor">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Smart TV 4k Samsung 65"</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-3 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/tv-sonido/parlante-portatil.webp" class="card-img-top w-100 rounded"
+                    alt="imagen-sonido">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Parlante Portátil Panacom</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/tv-sonido/barra-de-sonido-xiaomi-soundbar.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-sonido">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Barra de Sonido Xiaomi</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electronicos/tv-sonido/torre-de-sonido-noblex.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-sonido">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Torre de Sonido Noblex</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-tv" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-tv" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <hr class="m-5">
+
+    <section class="container-fluid text-center">
+      <h2 class="m-5 subtitulos" id="electrodomesticos">ELECTRODOMESTICOS</h2>
+      <h3 class="subtitulos" id="cocina">Cocina</h3>
+      <div id="carousel-hogar" class="carousel slide carousel-dark w-auto">
+        <div class="carousel-inner w-auto b-2">
+          <div class="carousel-item active">
+            <div class="row row-cols-3 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electro-domesticos/cocina/cocina.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Cocina Electrica</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electro-domesticos/cocina/heladera.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Heladera Cíclica Drean 277Lts</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electro-domesticos/cocina/microondas.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">MicroondasATMA 700W 17LT</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-3 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electro-domesticos/cocina/baridora.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Batidora de Pie KitckenAid</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electro-domesticos/cocina/Freidora-electrica.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Freidora Electrica sin Aceite</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="./imagenes/electro-domesticos/cocina/pava-electrica.webp"
+                    class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+                  <div class="card-body">
+                    <hr>
+                    <h5 class="card-title subtitulos">Pava Electrica Midea</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-hogar" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-hogar" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <h3 id="limpieza" class="pt-5 subtitulos">Limpieza</h3>
+      <div class="row row-cols-3 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagenes/electro-domesticos/baño/lavaropas-2.webp"
+              class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title subtitulos">Lavaropa Drean 5kg</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagenes/electro-domesticos/baño/secaropa.webp"
+              class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title subtitulos">Secaropas Drean 6.5kg</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagenes/electro-domesticos/baño/aspiradora.webp"
+              class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title subtitulos">Aspiradora con Cable Philco</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 id="aire-calefaccion" class="pt-5 subtitulos">Aire y Calefacción</h3>
+      <div class="row row-cols-3 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagenes/electro-domesticos/aireYcalefaccion/estufa-electrica.webp"
+              class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title subtitulos">Estufa Halogena Electrolux</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagenes/electro-domesticos/aireYcalefaccion/aire.webp"
+              class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title subtitulos">Aire acondicionado Split Frio/Calor</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imagenes/electro-domesticos/aireYcalefaccion/estufa-garrafa.webp"
+              class="card-img-top w-100 rounded" alt="imagen-electrodomestico">
+            <div class="card-body">
+              <hr>
+              <h5 class="card-title subtitulos">Estufa Garrafera Negra</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-5">
+
+    <section class="container-fluid text-center">
+      <h2 class="m-5 subtitulos" id="novedades">NOVEDADES</h2>
+      <div class="row row-cols-xs-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 m-auto justify-content-between">
+        <div class="col-5 col-sm-5 col-md-5 col-lg-3 mt-sm-0 mb-sm-0 ms-auto me-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6 class="fs-6">Nuestras Redes:</h6>
+            <div>
+              <i class="bi bi-facebook iconos fs-4 p-1"></i>
+              <i class="bi bi-whatsapp iconos fs-4 p-1"></i>
+              <i class="bi bi-youtube iconos fs-4 p-1"></i>
+              <i class="bi bi-instagram iconos fs-4 p-1"></i>
+              <i class="bi bi-twitter iconos fs-4 p-1"></i>
+            </div>
+            <h6 class="fs-6">ELECTRONIC--->STORE</h6>
+          </div>
+        </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-3 mt-sm-0 mb-sm-4 mt-md-0 mb-md-4 m-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6>Atención al Cliente:</h6>
+            <span class="fs-6 fw-light text-start">0800 123 4567</span>
+            <span class="fs-6 fw-light text-start">0810 321 7654</span>
+            <span class="fs-6 fw-light text-start">LU-VI de 09:00 a 18:00</span>
+            <span class="fs-6 fw-light text-start">SA de 9:00 a 13:00</span>
+            <span class="fs-6 fw-light text-start">contacto@electronicstore.com</span>
+          </div>
+        </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-3 mt-sm-0 mb-sm-0 mt-md-0 mb-md-0 m-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6>Venta Telefonica:</h6>
+            <span class="fs-6 fw-light text-start">0810 123 4567</span>
+            <span class="fs-6 fw-light text-start">LU-VI de 08:00 a 20:00</span>
+            <span class="fs-6 fw-light text-start">SA-DO-Feriados de 9:00 a 21:00</span>
+          </div>
+        </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-2 mt-sm-0 mb-sm-0 mt-md-0 mb-md-0 m-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6>Servicios a Empresas</h6>
+            <span class="fs-6 fw-light">Ventas corporativas</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-5 mb-5">
+
+      <div class="row row-cols-xs-2  row-cols-xs-2row-cols-sm-2 row-cols-md-2 row-cols-lg-4 m-auto justify-content-between">
+        <div class="col-5 col-sm-5 col-md-5 col-lg-3 mb-3 mt-sm-0 mb-sm-3 ms-auto me-auto p-0">
+          <form class="w-100 m-auto d-flex flex-column align-items-start" action="">
+            <h6 class="fs-6 text-start">Recibí ofertas y promociones</h6>
+            <label for="correo">
+              <input type="email" name="email" class="form-control" id="correo" placeholder="Ingresá tu email" required>
+            </label>
+            <input class="btn btn-primary mt-2" type="submit" value="SUSCRIBIRME">
+          </form>
+        </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-3 mt-0 mt-sm-0 mb-sm-4 mt-md-0 mb-md-4 m-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6 class="fs-6">Ayuda</h6>
+            <a class="text-decoration-none color" href="#">Centro de ayuda</a>
+            <a class="text-decoration-none color" href="#">Contactanos</a>
+            <a class="text-decoration-none color" href="#">Sucursales</a>
+          </div>
+        </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-3 mt-sm-0 mb-sm-0 mt-md-0 mb-md-0 m-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6 class="fs-6">Recomendados</h6>
+            <a class="text-decoration-none color" href="#">Smart TV</a>
+            <a class="text-decoration-none color" href="#">Celulares</a>
+            <a class="text-decoration-none color" href="#">Aire acondicionado</a>
+            <a class="text-decoration-none color" href="#">Más vendidos</a>
+          </div>
+        </div>
+        <div class="col-5 col-sm-5 col-md-5 col-lg-2 mt-sm-0 mb-sm-0 mt-md-0 mb-md-0 m-auto p-0">
+          <div class="w-100 m-auto d-flex flex-column align-items-start">
+            <h6 class="fs-6">Beneficios</h6>
+            <a class="text-decoration-none color" href="#">Personal Pay</a>
+            <a class="text-decoration-none color" href="#">YPF</a>
+            <a class="text-decoration-none color" href="#">365</a>
+            <a class="text-decoration-none color" href="#">Club Movistar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container-fluid bg-secondary pt-5 text-center">
+    <div class="d-flex justify-content-between w-75 m-auto">
+      <small>
+        <p>&copy; Derechos-Reservados-2023</p>
+      </small>
+      <p>Desarrollado por Aldeir-Aponte</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

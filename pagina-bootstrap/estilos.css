@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap');
+body {
+    /* background-color: aquamarine; */
+    background-color: #ced4da;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: rgba(127, 255, 212, 0.708);
+    border-radius: 10px;
+}
+
+.logo {
+    width: 90px;
+    min-width: 70px;
+}
+
+.titulo {
+    font-size: 3.2vw;
+}
+
+.subtitulos {
+    font-size: 2vw;
+}
+
+[id] {
+    scroll-margin-top: 3.8em;
+ }
+
+.navbar {
+    width: min-content;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: end;
+}
+
+.promo {
+    animation: mianimacion 3s ease infinite;
+    font-size: 3vw;
+    font-style: italic;
+    color: blue;
+    text-shadow: 1px 1px black;
+}
+
+.color {
+    color: black;
+    font-weight: 100;
+}
+
+.color:hover {
+    cursor: pointer;
+    text-decoration: underline!important;
+}
+
+.iconos:hover {
+    cursor: pointer;
+    color: white;
+    opacity: 65%;
+}
+
+@keyframes mianimacion {
+    from {
+        font-style: normal;
+    }
+    to {
+        font-style: italic;
+        color: blue;
+    }
+}
